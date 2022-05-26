@@ -1,5 +1,5 @@
 # LicestockMonitor
-Monitoring model with electrophysiologycal status in livestock(pig) based on esp32.
+A model for monitoring livestock(pig) with electrophysiological status based on esp32.
 
 No English version because my bad English level.
 
@@ -7,8 +7,7 @@ No English version because my bad English level.
 
 科创大赛作品（没写完，如果没过就删库）。
 
-**实时监测**猪的生理数据并且判断是否处于应激状态（性能与准确度允许就在本地测），并上传电生理数据
-至数据库以持久化保存。
+大项目是**实时监测**猪的生理数据并且判断是否处于应激状态（性能与准确度允许就在本地测），并上传电生理数据至数据库以持久化保存。
 
 因此该*子*项目的负责范围包括：
 
@@ -21,7 +20,7 @@ No English version because my bad English level.
 ```
 +-docs/             文档
 |   |
-|   o-...
+|   o-Interfaces.md     通信接口定义 bla bla..
 --include/
 --lib/
 +-src/              源代码
@@ -29,7 +28,9 @@ No English version because my bad English level.
 |   +-connect/          和主机/其他设备的通信
 |   |   |
 |   |   o-Connect.h
-|   --eda/              采集皮肤点信息
+|   --eda/              采集皮肤电信息
+|   |   |
+|   |   o-FetchEDASingal.h  获取皮电信号
 |   +-emg/              采集肌电信息
 |   |   |
 |   |   o-FetchEMGSingal.h  获取肌电信号

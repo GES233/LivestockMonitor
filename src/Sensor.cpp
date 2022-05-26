@@ -4,9 +4,9 @@
  * version:    0.0.1
  * discription:
  * This project is based on ESP32 WROOM platform, and
- * it is used to running a program that can real-time
- * monitoring animal physiological status with
- * uninterruptly.
+ * it is used to running a program that can monitoring
+ * animal physiological status uninterruptly and return
+ * a result immediately(real-time).
  * This is a prototype to verify the feasibility and
  * measure the costly, please DO NOT UPGRATE IT TO
  * THE PRODUCTIVE ENVIRONMENT.

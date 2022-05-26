@@ -3,7 +3,7 @@
  * author:     GES233
  * version:    0.0.1
  * discription:
- * Configure the sensor and the environment of program.
+ * Configure the sensor and save the environment of program.
 */
 #include "Configure.h"
 //#include <EEPROM.h>
