@@ -1,34 +1,48 @@
-# Monitor
+# LicestockMonitor
+Monitoring model with electrophysiologycal status in livestock(pig) based on esp32.
 
-## Overview
+No English version because my bad English level.
 
-### Structure
+## 概述
+
+科创大赛作品（没写完，如果没过就删库）。
+
+**实时监测**猪的生理数据并且判断是否处于应激状态（性能与准确度允许就在本地测），并上传电生理数据
+至数据库以持久化保存。
+
+因此该*子*项目的负责范围包括：
+
+- 与主机通信并传输数据
+- 监测并处理采集的数据
+- 保存部分作为标识的数据，可以随时读取
+
+### 代码结构
 
 ```
-+-docs/             Document.
++-docs/             文档
 |   |
 |   o-...
 --include/
 --lib/
-+-src/              source code.
++-src/              源代码
 |   |
-|   +-connect/          connect with host or other device.
+|   +-connect/          和主机/其他设备的通信
 |   |   |
 |   |   o-Connect.h
-|   --eda/
-|   +-emg/
+|   --eda/              采集皮肤点信息
+|   +-emg/              采集肌电信息
 |   |   |
-|   |   o-FetchEMGSingal.h
-|   |   o-RawDataGet.cpp
-|   |   o-SingalPre.cpp
-|   --model/            storage the model.
-|   +-setting/          configuration the Chip.
+|   |   o-FetchEMGSingal.h  获取肌电信号
+|   |   o-RawDataGet.cpp    存取数据以及设置传感器参数
+|   |   o-SingalPre.cpp     信号预处理
+|   --model/            保存模型
+|   +-setting/          配置设备
 |   |   |
-|   |   o-Configure.h       storage Settings.
-|   |   o-Configure.cpp     storage some methods to register.
-|   o-Sensor.cpp        main program.
---test/             some code to test.
-o-README.md
+|   |   o-Configure.h       保存设置
+|   |   o-Configure.cpp     注册/删除配置的方法
+|   o-Sensor.cpp        主程序
+--test/             测试代码
+o-README.md         本文件
 ```
 
-## Quike start
+## 上手
