@@ -10,12 +10,18 @@
 
 struct SensorConfigure {};
 
-void Settings::dumpConfigure() {}
+void Settings::dumpConfigure() {
+    // Extract the information with Server.
+}
 
-void Settings::loadConfigure() {}
+void Settings::loadConfigure() {
+    // Using other device to cover the source data(e.g. id of pig).
+}
 
 void Settings::updateSwine() {}
 
 void Settings::initializeConfigure() {
-    //...
+    // Web settings.
+    // 1. from code
+    // 2. from UART(yaml -> Object -> Code)
 }
