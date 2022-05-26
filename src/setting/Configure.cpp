@@ -10,10 +10,12 @@
 
 struct SensorConfigure {};
 
-void Settings::dump_Configure() {}
+void Settings::dumpConfigure() {}
 
-void Settings::load_Configure() {}
+void Settings::loadConfigure() {}
 
-void Settings::initialze_Configure() {
+void Settings::updateSwine() {}
+
+void Settings::initializeConfigure() {
     //...
 }
