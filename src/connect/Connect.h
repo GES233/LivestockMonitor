@@ -3,7 +3,7 @@
  * author:     GES233
  * version:    0.0.1
  * discription:
- * Connect with other.
+ * Build connection with host or other devices.
 */
 
 #ifndef __CONNECT_H__
@@ -26,6 +26,13 @@ const int NOT_CONNECTED  = 0;
 const int WIFI_CONNECTED = 1;
 const int BT_CONNECTED   = 2;
 const int ALL_CONNECTED  = 3;
+
+//typedef struct {
+//    NOT_CONNECTED,
+//    WIFI_CONNECTED,
+//    BT_CONNECTED,
+//    ALL_CONNECTED
+//} CONNTECTION_STATUS;
 
 class WiFiConnect {} SensorWithWiFi;
 
