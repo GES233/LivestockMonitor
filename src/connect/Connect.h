@@ -19,10 +19,13 @@ char ssid[] = "None";
 char pswd[] = "password";
 char server[] = "192.168.0.99"; // Using IP Address or domain.
 
+// Connection status:
 // If all are false -> tried to connected one:
 // priorities: setting -> stronger one.
-boolean wifi_connected = false;
-boolean bt_connected = false;
+const int NOT_CONNECTED  = 0;
+const int WIFI_CONNECTED = 1;
+const int BT_CONNECTED   = 2;
+const int ALL_CONNECTED  = 3;
 
 class WiFiConnect {} SensorWithWiFi;
 
