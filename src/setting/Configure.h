@@ -51,6 +51,19 @@ struct FinalHead {
     enum PIG_TYPE OP_2;
 } SensorHead;
 
+
+struct Config {
+    // Configure about sensor.
+    bool eda_enable;
+    int eda_port[2];
+    bool emg_enable;
+    int emg_head[3];
+    // Device identity.
+    bool id_registeration;
+    // Connection preference.
+};
+
+
 class Settings {
     public:
         // Methods:

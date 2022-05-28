@@ -9,10 +9,10 @@
     },
 
     "Sensor_setting" : {
-        "eda_voltage": "none",
-        "eda_data": "none",
-        "emg_voltage": "none",
-        "emg_data": "none"
+        "eda_port": "none",
+        "eda_enable": "false",
+        "emg_port": "none",
+        "emg_enable": "false"
     },
 
     "Model setting": {
