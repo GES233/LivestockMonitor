@@ -1,0 +1,21 @@
+{
+    "Connect_setting" : {
+        "allow_method": ["wifi", "bluetooth"],
+        "prefer_method": "both",
+        "heartbeat_freq": 10,
+        "wifi_ssid": "ALG",
+        "wifi_pswd": "123456",
+        "host_server": "example.com:2345"
+    },
+
+    "Sensor_setting" : {
+        "eda_voltage": "none",
+        "eda_data": "none",
+        "emg_voltage": "none",
+        "emg_data": "none"
+    },
+
+    "Model setting": {
+        "local_model": "none"
+    }
+}
