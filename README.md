@@ -41,9 +41,14 @@ No English version because my bad English level.
 |   |   |
 |   |   o-Configure.h       保存设置
 |   |   o-Configure.cpp     注册/删除配置的方法
+|   |   o-setting.json      配置文件（烧录前请修改）
 |   o-Sensor.cpp        主程序
 --test/             测试代码
 o-README.md         本文件
 ```
+
+### 依赖项
+
+- `<ArduinoJson>`
 
 ## 上手
