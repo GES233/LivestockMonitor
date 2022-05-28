@@ -6,12 +6,16 @@
  * Configure the sensor and save the environment of program.
 */
 #include "Configure.h"
-//#include <EEPROM.h>
+#include <ArduinoJson.h>
+#include <SD.h>
 
-struct SensorConfigure {};
+const char *filepath = "/setting.json";
 
-void Settings::dumpConfigure() {
-    // Extract the information with Server.
+void Settings::dumpConfigure(FinalHead &SensorHead) {
+    /**
+     * Extract the information with Server, the method
+     * which read the private element.
+    **/
 }
 
 void Settings::loadConfigure() {
@@ -20,8 +24,25 @@ void Settings::loadConfigure() {
 
 void Settings::updateSwine() {}
 
-void Settings::initializeConfigure() {
-    // Web settings.
-    // 1. from code
-    // 2. from UART(yaml -> Object -> Code)
+void Settings::initializeConfigure(const char *filepath, Config &SensorConfigure) {
+    /**
+     * Load all settings expect terget, this object will
+     * located as some constants when running.
+    **/
+
+    // load from configure file.
+    File file = SD.open(filepath);
+    
+    // Initialize the JSON object.
+    StaticJsonDocument<1024> doc;
+
+    DeserializationError error = deserializeJson(doc, file);
+    if (error) {
+        Serial.println(F("Loading setting failed, will using default."));
+    };
+
+    // JSON -> Object.
+
+    // End.
+    file.close();
 }

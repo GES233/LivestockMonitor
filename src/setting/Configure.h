@@ -61,19 +61,21 @@ struct Config {
     // Device identity.
     bool id_registeration;
     // Connection preference.
-};
+} SensorConfigure;
 
 
 class Settings {
     public:
         // Methods:
         void loadConfigure(); // input
-        void dumpConfigure(); // display
+        void dumpConfigure(FinalHead &SensorHead); // display
         void updateSwine();   // e.g. piglet -> castrated.
         // add delete.
+        // Values:
+        struct SensorConfigure;
     private:
         // Methods:
-        void initializeConfigure();
+        void initializeConfigure(const char *filepath, Config &SensorConfigure);
         // Values:
         struct SonsorHead;
 };
