@@ -32,6 +32,19 @@ void Settings::initializeConfigure(const char *filepath, Config &SensorConfigure
 
     // load from configure file.
     File file = SD.open(filepath);
+    /**
+     * JSON example(JSON doesn't allow comment):
+     * {
+     *   "Connection setting": {
+     *     "allow_method" : [list], # WiFi, Bluetooth.
+     *     "prefer_method" : "both", # both / none / one of all.
+     *     "heartbeat_freq": 10, # per minute.
+     *     "host_server": "127.46.22.7" # IP addr or doamin.
+     *   },
+     *   "Sensor setting": {},
+     *   "Model setting": {}
+     * }
+    */
     
     // Initialize the JSON object.
     StaticJsonDocument<1024> doc;
