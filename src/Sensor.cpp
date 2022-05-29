@@ -14,9 +14,9 @@
  **/
 
 #include <Arduino.h>
-#include "setting/Configure.h"
-#include "connect/Connect.h"
-#include "emg/FetchEMGSingal.h"
+//#include "setting/Configure.h"
+//#include "connect/Connect.h"
+//#include "emg/FetchEMGSingal.h"
 
 void setup(){
     /**
@@ -28,7 +28,7 @@ void setup(){
      * - Return infomation that it is ready to use.
     */
     Serial.begin(9600); // If UART enabled.
-    Serial.print("Opened.");
+    //Serial.print("Opened.");
     // Initialize network firstly.
     // Registrate and configurate setting.
     // Initialize the pin.
@@ -42,4 +42,5 @@ void loop(){
      * Fetch/Collect -> Migrate (-> execute algorithm)
      * -> Update -> waiting for [shake_hand] -> [Reserve]
     */
+   Serial.print("Hello world");
 };
