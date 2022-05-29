@@ -34,13 +34,13 @@ No English version because my bad English level.
 |   +-emg/              采集肌电信息
 |   |   |
 |   |   o-FetchEMGSingal.h  获取肌电信号
-|   |   o-RawDataGet.cpp    存取数据以及设置传感器参数
-|   |   o-SingalPre.cpp     信号预处理
+|   |   //o-RawDataGet.cpp    存取数据以及设置传感器参数
+|   |   //o-SingalPre.cpp     信号预处理
 |   --model/            保存模型
 |   +-setting/          配置设备
 |   |   |
 |   |   o-Configure.h       保存设置
-|   |   o-Configure.cpp     注册/删除配置的方法
+|   |   //o-Configure.cpp     注册/删除配置的方法
 |   |   o-setting.json      配置文件（烧录前请修改）
 |   o-Sensor.cpp        主程序
 --test/             测试代码

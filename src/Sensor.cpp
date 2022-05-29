@@ -18,6 +18,8 @@
 //#include "connect/Connect.h"
 //#include "emg/FetchEMGSingal.h"
 
+const int LED = 2;
+
 void setup(){
     /**
      * If you known Arduino before, I think you may understand this.
@@ -29,6 +31,16 @@ void setup(){
     */
 
     /* Start UART. */
+    pinMode(LED, OUTPUT);
+    while (!Serial){ // if not connected AND not configurate before.
+        /* LED will Blink */
+        digitalWrite(LED, HIGH);
+        delay(350);
+        digitalWrite(LED, LOW);
+        delay(150);
+    };
+    // Make LED HIGH.
+    digitalWrite(LED, HIGH);
     Serial.begin(115200); 
     Serial.println("Opened.");
 
