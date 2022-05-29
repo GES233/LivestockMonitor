@@ -9,10 +9,6 @@
 #ifndef __CONFIGURE_H__
 #define __CONFIGURE_H__
 
-/**
- * whole option = sensor option + pig type
-*/
-
 // SENSOR_OPTIONS: one part of oprations.
 enum SENSOR_OPTIONS {
     SNOUT_EDA,
@@ -32,7 +28,7 @@ enum PIG_TYPE {
  * This is ALL information with the board.
 */
 struct FinalHead {
-    /* Device info. */
+    /* The template to connected with the host. */
     // ID of device.
     long int device_id;
     // Produce year, month and day.
@@ -53,17 +49,22 @@ struct FinalHead {
 
 
 struct Config {
-    // Configure about sensor.
+    /**/
+
+    /* infomation of the sensor. */
+    bool id_registeration;
+
+    /* Configure about sensor. */
     bool eda_enable;
     int eda_port[2];
     bool emg_enable;
     int emg_head[3];
-    // Device identity.
-    bool id_registeration;
-    // Connection preference.
+
+    /* Connection preference. */
+    //;
 } SensorConfigure;
 
-
+/*
 class Settings {
     public:
         // Methods:
@@ -72,12 +73,13 @@ class Settings {
         void updateSwine();   // e.g. piglet -> castrated.
         // add delete.
         // Values:
-        struct SensorConfigure;
+        struct Config SensorConfigure;
     private:
         // Methods:
         void initializeConfigure();
         // Values:
-        struct SonsorHead;
+        struct FinalHead SonsorHead;
 };
+*/
 
 #endif
