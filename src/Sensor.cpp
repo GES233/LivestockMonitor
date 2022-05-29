@@ -31,16 +31,14 @@ void setup(){
     */
 
     /* Start UART. */
-    pinMode(LED, OUTPUT);
     while (!Serial){ // if not connected AND not configurate before.
         /* LED will Blink */
-        digitalWrite(LED, HIGH);
-        delay(350);
+        pinMode(LED, OUTPUT);
         digitalWrite(LED, LOW);
         delay(150);
+        digitalWrite(LED, HIGH);
+        delay(350);
     };
-    // Make LED HIGH.
-    digitalWrite(LED, HIGH);
     Serial.begin(115200); 
     Serial.println("Opened.");
 
