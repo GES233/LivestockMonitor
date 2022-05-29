@@ -27,13 +27,27 @@ void setup(){
      * - Initialize pin and network setting and connect with host firstly.
      * - Return infomation that it is ready to use.
     */
-    Serial.begin(115200); // If UART enabled.
-    //Serial.print("Opened.");
-    // Initialize network firstly.
-    // Registrate and configurate setting.
-    // Initialize the pin.
-    // Initialize date.
-    // Loading paramaters.
+
+    /* Start UART. */
+    Serial.begin(115200); 
+    Serial.println("Opened.");
+
+    /* Initialize network firstly. */
+
+    /* Registrate and configurate setting. */
+
+    /* Initialize the pin to connected with the sensor. */
+
+    /* Initialize date and get time. */
+
+    /* Loading paramaters of the sensor. */
+
+    /* Loading some data(e.g. the type of swine) manually. */
+    //while (true) {};
+
+    /* Start service. */
+    Serial.println("All preperation had done, the service will runing...");
+    Serial.end();
 };
 
 void loop(){
@@ -42,6 +56,4 @@ void loop(){
      * Fetch/Collect -> Migrate (-> execute algorithm)
      * -> Update -> waiting for [shake_hand] -> [Reserve]
     */
-   Serial.print("Hello world\n");
-   delay(1000);
 };
