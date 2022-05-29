@@ -75,7 +75,7 @@ class Settings {
         struct SensorConfigure;
     private:
         // Methods:
-        void initializeConfigure(const char *filepath, Config &SensorConfigure);
+        void initializeConfigure();
         // Values:
         struct SonsorHead;
 };
