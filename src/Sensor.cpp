@@ -27,7 +27,7 @@ void setup(){
      * - Initialize pin and network setting and connect with host firstly.
      * - Return infomation that it is ready to use.
     */
-    Serial.begin(9600); // If UART enabled.
+    Serial.begin(115200); // If UART enabled.
     //Serial.print("Opened.");
     // Initialize network firstly.
     // Registrate and configurate setting.
@@ -42,5 +42,6 @@ void loop(){
      * Fetch/Collect -> Migrate (-> execute algorithm)
      * -> Update -> waiting for [shake_hand] -> [Reserve]
     */
-   Serial.print("Hello world");
+   Serial.print("Hello world\n");
+   delay(1000);
 };
