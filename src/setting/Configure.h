@@ -34,7 +34,7 @@ struct FinalHead {
     // Produce year, month and day.
     int produce_date[3];
     // Instantiation SENSOR_OPTIONS.
-    enum SENSOR_OPTIONS OP_1;
+    SENSOR_OPTIONS OP_1;
 
     /* Terget info, Referenced to "Technical 
     specifications for livestock ear tags" from
@@ -44,7 +44,7 @@ struct FinalHead {
     // and sub number: 8 digits.
     short int swine_id[2];
     // Instantiation PIG_TYPE.
-    enum PIG_TYPE OP_2;
+    PIG_TYPE OP_2;
 } SensorHead;
 
 
