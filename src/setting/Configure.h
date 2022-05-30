@@ -10,14 +10,14 @@
 #define __CONFIGURE_H__
 
 // SENSOR_OPTIONS: one part of oprations.
-enum SENSOR_OPTIONS {
+typedef enum SENSOR_OPTIONS {
     SNOUT_EDA,
     FACIAL_EMG,
     MULTIPLE
 };
 
 // PIG_TYPE: one part of oprations, the param may different.
-enum PIG_TYPE {
+typedef enum PIG_TYPE {
     PIGLET,
     CASTRATE_PIG,
     BOAR,
