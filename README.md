@@ -49,6 +49,7 @@ o-README.md         本文件
 
 ### 依赖项
 
-- `<ArduinoJson>`
+- `ArduinoJson`
+- `Blynk`
 
 ## 上手
