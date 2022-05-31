@@ -22,10 +22,12 @@ char server[] = "192.168.0.99"; // Using IP Address or domain.
 // Connection status:
 // If all are false -> tried to connected one:
 // priorities: setting -> stronger one.
-const int NOT_CONNECTED  = 0;
-const int WIFI_CONNECTED = 1;
-const int BT_CONNECTED   = 2;
-const int ALL_CONNECTED  = 3;
+typedef enum {
+    NOT_CONNECTED,  // 0,
+    WIFI_CONNECTED, // 1,
+    BT_CONNECTED,   // 2,
+    ALL_CONNECTED   // 3
+} CONNECT_STATUS;
 
 //typedef struct {
 //    NOT_CONNECTED,
