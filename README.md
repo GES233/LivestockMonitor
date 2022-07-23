@@ -5,7 +5,7 @@ No English version because my bad English level.
 
 ## 概述
 
-科创大赛作品（没写完，如果没过就删库）。
+科创大赛作品（没写完，如果没过就~~删库~~ 攒着吧）。
 
 大项目是**实时监测**猪的生理数据并且判断是否处于应激状态（性能与准确度允许就在本地测），并上传电生理数据至数据库以持久化保存。
 
@@ -20,6 +20,9 @@ No English version because my bad English level.
 ```
 +-docs/             文档
 |   |
+|   +-demo/             演示文档
+|   |   |
+|   |   +-...
 |   o-Interfaces.md     通信接口定义 bla bla..
 --include/
 --lib/
@@ -50,6 +53,5 @@ o-README.md         本文件
 ### 依赖项
 
 - `ArduinoJson`
-- `Blynk`
 
 ## 上手
