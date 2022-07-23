@@ -29,13 +29,6 @@ typedef enum {
     ALL_CONNECTED   // 3
 } CONNECT_STATUS;
 
-//typedef struct {
-//    NOT_CONNECTED,
-//    WIFI_CONNECTED,
-//    BT_CONNECTED,
-//    ALL_CONNECTED
-//} CONNTECTION_STATUS;
-
 class WiFiConnect {} SensorWithWiFi;
 
 class Bluetooth {} SensorWithBluetooth;
